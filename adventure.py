@@ -103,11 +103,11 @@ if __name__ == '__main__':
             journal_content = f.read()
 
         print("\nExtracting Dates...")
-        dates = extract_journal_dates(journal_content)
+        extracted_dates = extract_journal_dates(journal_content)
         print(f"Found dates: {dates}")
 
         print("\nExtracting Secret Codes...")
-        codes = extract_secret_codes(journal_content)
+        extracted_codes = extract_secret_codes(journal_content)
         print(f"Found codes: {codes}")
 
     except FileNotFoundError:
